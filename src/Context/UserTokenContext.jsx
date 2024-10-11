@@ -1,12 +1,12 @@
-//  import { createContext, useState } from "react";
+import { createContext, useState } from "react";
 
-//   let UserTokenContext=createContext(null);
+export let UserTokenContext = createContext(null);
 
-//    export default function UserTokenContextProvider({children}){
-//  let [token,setToken]=useState(null);
+export default function UserTokenContextProvider({ children }) {
+    let [token, setToken] = useState(null);
+    <UserTokenContext.Provider value={{ token, setToken }} >
 
-//  <UserTokenContext.Provider value={{token,setToken}} >
+        {children}
 
-
-//   </UserTokenContext.Provider >
-//   }
+    </UserTokenContext.Provider >
+}
