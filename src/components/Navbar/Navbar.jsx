@@ -27,10 +27,12 @@ export default function Navbar() {
               <NavLink to="home">Home</NavLink>
 
             </li>
+            
             <li>
               <NavLink to="cart">Cart</NavLink>
 
             </li>
+           
             <li>
               <NavLink to="brands">Brands</NavLink>
 
